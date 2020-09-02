@@ -3,18 +3,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Fun Bus Travel Agency</title>
+  <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
-  <link href="less/index.less" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 
-  <!-- If we omit the "defer" attribute, `index.js` will load and execute
-  _before_ the rest of the HTML is parsed by the browser, which would be bad because
-  the code inside `index.js` expects the page to be fully parsed (and the DOM fully built) -->
-  <script defer src="js/index.js"></script>
-  <!-- We will often see script tags placed right before the closing body tag,
-  it's a way of getting around the problem above without the need for "defer" -->
+  <script src="js/index.js" async></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -30,7 +30,7 @@
       </nav>
     </div>
   </header>
-     
+
   <div class="container home">
     <header class="intro">
       <img src="img/fun-bus.jpg" alt="bus in the sand">
@@ -40,7 +40,7 @@
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p>
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
       <div class="img-content">
@@ -53,10 +53,10 @@
       </div>
       <div class="text-content">
         <h2>Adventure Awaits</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p>
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
-     
+
     </section>
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
@@ -68,24 +68,24 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn" draggable="true">Sign Me Up!</div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn" draggable="true">Sign Me Up!</div>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn" draggable="true">Sign Me Up!</div>
       </div>
     </section>
   </div><!-- container -->
-
-  <footer class="footer">
-    <p>Copyright Fun Bus 2020</p>
-  </footer>
-
 </body>
-</html>
+
+<footer class="footer">
+  <p>Copyright Fun Bus 2018</p>
+</footer>
+
+</html> 
