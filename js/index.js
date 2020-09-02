@@ -88,3 +88,63 @@ window.addEventListener('focus', () => {
     footer.textContent = 'Window is in Focus';
 }); 
 
+
+/// playing///
+
+
+const navContainer = document.querySelector ('.main-navigation');
+navContainer.addEventListener (
+  'mouseover',
+  event => {
+    event.stopPropagation ();
+    event.target.style.backgroundColor = 'gold';
+    setTimeout (() => {
+      event.target.style.backgroundColor = '';
+    }, 4000);
+  },
+  false
+  );
+  
+    const h2s = document.querySelectorAll ('h2');
+    window.addEventListener ('resize', blurBackground);
+    const h2Color = () => {
+      h2s.forEach (item => {
+        item.style.color = 'gold';
+        setTimeout (() => {
+          item.style.color = '';
+        }, 1000);
+      });
+    };
+    const images = document.querySelectorAll ('img');
+    const imgBlur = () => {
+      images.forEach (item => {
+        item.style.filter = 'blur(2px)';
+        setTimeout (() => {
+          item.style.filter = '';
+        }, 1000);
+      });
+    };
+    window.addEventListener ('scroll', h2Color);
+    window.addEventListener ('scroll', imgBlur);
+    //night light 1
+    const lightSwitch = document.querySelector ('#lightSwitch');
+    lightSwitch.addEventListener ('click', () => {
+      if (bodyContent.style.backgroundColor === 'black') {
+        bodyContent.style.backgroundColor = 'white';
+        bodyContent.style.color = 'black';
+      } else {
+        bodyContent.style.backgroundColor = 'black';
+        bodyContent.style.color = 'white';
+      }
+    });
+    //night light 2
+    debugger
+    lightswitch.addEventListener ('dblclick', () => {
+      if (bodyContent.style.backgroundColor === 'black') {
+        bodyContent.style.backgroundColor = 'white';
+        bodyContent.style.color = 'black';
+      } else {
+        bodyContent.style.backgroundColor = 'black';
+        bodyContent.style.color = '#202020';
+      }
+    });
